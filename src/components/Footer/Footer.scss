@@ -1,0 +1,85 @@
+.footer {
+	position: relative;
+	z-index: 2;
+}
+
+.swiper {
+	margin: 0 160px 0 80px;
+	transition: opacity 0.3s;
+}
+
+.swiper.hidden {
+	opacity: 0;
+}
+
+.swiper-slide {
+	cursor: pointer;
+	text-align: left;
+}
+
+.swiper-header {
+	user-select: none;
+	color: #3877ee;
+	margin-top: 0;
+	font-family: 'Bebas Neue', sans-serif;
+	font-weight: 400;
+	font-size: 25px;
+	line-height: 120%;
+}
+
+.swiper-text {
+	user-select: none;
+	font-size: 20px;
+	line-height: 30px;
+	font-weight: 400;
+}
+
+.swiper-button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	top: 41px;
+	position: absolute;
+	background-color: white;
+	border: none;
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+	z-index: 2;
+	transform: translate(0, -50%);
+	box-shadow: 0px 0px 15px rgba(56, 119, 238, 0.1);
+}
+
+.swiper-button.prev {
+	left: 20px;
+	svg {
+		transform: rotate(180deg);
+	}
+}
+
+.swiper-button.next {
+	right: 40px;
+}
+
+@media screen and (max-width: 1280px) {
+	.swiper {
+		min-height: 212px;
+	}
+	.swiper-slide {
+		width: 64% !important;
+	}
+	.swiper-slide-next,
+	.swiper-slide-prev {
+		opacity: 0.5;
+	}
+
+	.swiper-header {
+		font-size: 16px;
+	}
+	.swiper-text {
+		font-size: 14px;
+	}
+	.swiper {
+		margin: 0 20px 20px 20px;
+	}
+}

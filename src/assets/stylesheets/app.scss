@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+:root {
+	--main-text: rgba(66, 86, 122, 1);
+	--border-color: rgba(220, 221, 225, 1);
+	--page-bg: #f4f5f9;
+}
+
+html,
+body {
+	font-family: 'PT Sans', sans-serif;
+	min-height: 100vh;
+	font-size: 16px;
+	color: var(--main-text);
+	margin: 0;
+	background-color: var(--page-bg);
+}

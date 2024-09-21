@@ -1,0 +1,32 @@
+.main {
+	position: relative;
+	padding-top: 170px;
+	padding-bottom: 104px;
+	max-width: 1440px;
+	margin: 0 auto;
+	border: 1px solid var(--border-color);
+	border-top: none;
+	border-bottom: none;
+	height: 100;
+	overflow: hidden;
+	z-index: 1;
+}
+.vertical {
+	display: block;
+	position: absolute;
+	width: 1px;
+	height: 100%;
+	left: 50%;
+	top: 0;
+	background-color: var(--border-color);
+}
+
+@media screen and (max-width: 1280px) {
+	.vertical {
+		display: none;
+	}
+	.main {
+		max-width: 320px;
+		border: none;
+	}
+}

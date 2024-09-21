@@ -1,0 +1,62 @@
+.intro {
+	position: relative;
+	min-height: 400px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 130px;
+}
+
+.year,
+.space {
+	max-width: 400px;
+	display: block;
+	width: 100%;
+	font-size: 160px;
+	font-weight: 700;
+	text-align: center;
+}
+.year.left {
+	color: rgb(93 95 239);
+}
+.year.right {
+	color: rgb(239 93 168);
+}
+
+.background {
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	position: absolute;
+	z-index: 1;
+	overflow: visible;
+}
+
+.horizontal {
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 1px;
+	top: 50%;
+	z-index: -1;
+	background-color: var(--border-color);
+}
+
+@media screen and (max-width: 1280px) {
+	.horizontal {
+		top: 100%;
+	}
+	.intro {
+		max-width: 280px;
+		min-height: unset;
+		margin: 0 auto 20px auto;
+		gap: 0;
+		justify-content: space-between;
+		padding-top: 56px;
+		padding-bottom: 57px;
+	}
+	.year {
+		font-size: 56px;
+	}
+}

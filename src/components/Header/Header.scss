@@ -1,0 +1,29 @@
+.header-wrapper {
+	display: flex;
+	align-items: stretch;
+}
+.header-line {
+	margin-left: -1px;
+	width: 5px;
+	background: linear-gradient(180deg, #3877ee -5%, #ef5da8 85%);
+}
+
+.header {
+	margin-left: 78px;
+	font-size: 56px;
+	font-weight: 700;
+	max-width: 400px;
+	text-align: left;
+}
+
+@media screen and (max-width: 1280px) {
+	.header-line {
+		display: none;
+	}
+
+	.header {
+		font-size: 20px;
+		margin-left: 20px;
+		max-width: 124px;
+	}
+}
